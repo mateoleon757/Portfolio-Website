@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+      .navbaritems {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 200px;
+        font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+      }
+      .navbaritems > div {
+        background-color: antiquewhite;
+        width: fit-content;
+        text-align: center;
+      }
+      .navbar-brand {
+        margin-left: 20px;
+        font-size: x-large;
+      }
+      body {
+        background-color: #171717;
+      }
+      .button {
+        background-color: #f9cc15;
+      }
+      #navbarcolor {
+        background-color: #030617;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        height: 70px;
+        position: fixed;
+        opacity: 89%;
+      }
+      .navbarcorrection {
+        padding-bottom: 0px;
+        padding-top: 0px;
+      }
+      .contactbutton {
+        background-color: #eab308;
+        font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .d-block {
+        border-radius: 20px;
+      }
+      .welcometag {
+        font-size: 1rem;
+        color: #d1a10b;
+        font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .shortorangetext {
+        color: #e9b308;
+      }
+      .img-fluid {
+        width: 500px;
+        height: 550px;
+        z-index: -1;
+        position: absolute;
+        margin-right: -660px;
+        top: 90px;
+      }
+      .bi {
+        filter: invert(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary navbarcorrection">
+      <div class="container-fluid" id="navbarcolor">
+        <a
+          style="
+            color: white;
+            padding-left: 320px;
+            font-family: Roboto, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          "
+          class="navbar-brand"
+          href="#"
+        >
+          About<span class="shortorangetext">Me.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbaritems" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="homeitem">
+              <a
+                style="color: #6b727f"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #6b727f" class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Hero-->
+    <section id="title" class="background">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="man-shirt-with-crossed-arms.jpg"
+              class="d-block mx-lg-auto img ps-2"
+              alt="Bootstrap Themes"
+              width="500"
+              height="550"
+              loading="lazy"
+            />
+          </div>
+          <img
+            src="square.svg"
+            alt="square"
+            class="img-fluid w-100 d-none d-lg-block d-md-block"
+          />
+          <div class="col-lg-6">
+            <div class="welcometag">Hello, Welcome</div>
+            <h1
+              style="
+                color: white !important;
+                font-family: Lexend Deca, sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                margin-bottom: 1.5rem !important;
+                margin-top: 1.5rem !important;
+                font-size: 4rem;
+              "
+              class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+            >
+              I'm Anderson Coper
+            </h1>
+            <p
+              style="
+                color: #737373;
+                font-family: Lexend Deca, sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                margin-bottom: 2.5rem !important;
+                font-size: 1.25rem;
+              "
+              class="lead"
+            >
+              I am a student at Florida State University. I have learned the
+              fundamentals of HTML, CSS, and now JavaScript. This website is
+              meant to show how much I know about HTML and CSS.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+            <button type="button" class="btn contactbutton btn-lg px-4 me-md-2">
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Features-->
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 style="color: white" class="pb-2">
+        My <span style="color: #eab308">Service</span>
+      </h2>
+      <p
+        style="
+          color: #737373;
+          font-family: Lexend Deca, sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          width: 800px;
+        "
+      >
+        My website provides three types of services. Including: digital
+        marketing, web development, and creative graphic design. All are done by
+        me with the expectation of looking professional quality.
+      </p>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-2 mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill=" var(--bs-primary)"
+              class="bi bi-megaphone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Digital marketing</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          ></div>
+          <h3 class="fs-2 text-body-emphasis">Web Development</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#toggles2"></use>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Creative Graphic Design</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
